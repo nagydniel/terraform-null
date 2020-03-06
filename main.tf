@@ -1,10 +1,10 @@
 provider "aws" {
-  #region                   = var.region
-  #access_key               = var.access_key
-  #secret_key               = var.secret_key
+  region                   = var.region
+  access_key               = var.access_key
+  secret_key               = var.secret_key
   #shared_credentials_file = "~/.aws/credentials"
   #profile                 = var.profile
-  #max_retries              = 5
+  max_retries              = 5
 }
 
 terraform {
