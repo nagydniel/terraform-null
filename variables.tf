@@ -13,3 +13,7 @@ variable "access_key" {
 variable "secret_key" {
   description = "AWS secret key"
 }
+
+variable "bucket" {
+  description = "AWS s3 bucket for the state file"
+}
