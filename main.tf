@@ -15,13 +15,13 @@ terraform {
   }
 }
 
-resource "null_resource" "example" {}
+# resource "null_resource" "example" {}
 
-resource "aws_instance" "web" {
-  ami           = "ami-0b418580298265d5c"
-  instance_type = "t2.micro"
+# resource "aws_instance" "web" {
+#   ami           = "ami-0b418580298265d5c"
+#   instance_type = "t2.micro"
 
-  tags = {
-    Name = "HelloWorld"
-  }
-}
+#   tags = {
+#     Name = "HelloWorld"
+#   }
+# }
