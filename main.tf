@@ -8,7 +8,11 @@ provider "aws" {
 }
 
 terraform {
-  backend "s3" {}
+  backend "s3" {
+    bucket = var.bucket
+    key    = "tf_cloud"
+    region = var.region
+  }
 }
 
 resource "null_resource" "example" {}
